@@ -69,23 +69,27 @@
                 <div class="absolute inset-0 bg-blue-100 rounded-3xl transform rotate-6 transition-transform group-hover:rotate-12"></div>
                 <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden shadow-xl border-4 border-white z-10">
                     <img src="./foto_1.jpg" 
-                         alt="Jakub Rymar" 
-                         class="w-full h-full object-cover object-center"
-                         onerror="this.onerror=null; this.src='https://placehold.co/400x533/ffe4e6/be123c?text=Brak+pliku+foto_1.jpg';">
+                        
+                         <!-- KARTA 2: Katalog Bilardowy (Nowy projekt) -->
+            <a href="https://bilard.vercel.app/index.html" target="_blank" class="group block border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900">
+                <!-- Podgląd strony (Obrazek) -->
+                <div class="w-full h-56 bg-neutral-800 overflow-hidden relative">
+                    <!-- Zmień adres src, gdy zrobisz screena nowego katalogu -->
+                    <img src="https://picsum.photos/seed/billiard/800/450" alt="Podgląd katalogu bilardowego" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-500"></div>
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Rubryka: Moje strony -->
-    <section id="moje-strony" class="py-24 bg-white border-t border-gray-100">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="mb-16 md:text-left text-center">
-                <h2 class="text-3xl font-bold mb-4">Moje strony i projekty</h2>
-                <p class="text-gray-600 text-lg">Miejsca, w których rozwijam swoje umiejętności i testuję nowe technologie.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Treść karty -->
+                <div class="p-8">
+                    <h3 class="text-2xl font-light mb-4 group-hover:text-white transition">Katalog: Wyposażenie Rozrywkowe</h3>
+                    <p class="text-neutral-400 mb-6 text-sm">
+                        Dynamiczny katalog produktów z podziałem na kategorie (stoły, piłkarzyki, cymbergaje), interaktywnym filtrowaniem oraz szybką bazą danych w JavaScript.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs uppercase tracking-widest text-green-500">Status: Gotowy</span>
+                        <span class="text-xs uppercase tracking-widest text-white border-b border-transparent group-hover:border-white pb-1 transition duration-300">Otwórz stronę ↗</span>
+                    </div>
+                </div>
+            </a>
             
             <!-- KARTA 1: Szablon Fotograf (Cała klikalna) -->
             <a href="https://szablon-fotograf.vercel.app" target="_blank" class="group block border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900">
