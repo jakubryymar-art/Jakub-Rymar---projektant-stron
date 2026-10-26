@@ -77,8 +77,8 @@
         </div>
     </header>
 
-    <!-- Sekcja: Moje Projekty -->
-    <section id="moje-strony" class="py-20 max-w-5xl mx-auto px-6">
+<!-- Sekcja: Moje Projekty -->
+    <section id="moje-strony" class="py-20 max-w-6xl mx-auto px-6">
         
         <!-- Wyśrodkowany nagłówek -->
         <div class="mb-14 text-center">
@@ -86,52 +86,56 @@
             <p class="text-gray-600 text-lg">Miejsca, w których rozwijam swoje umiejętności i testuję nowe technologie.</p>
         </div>
 
-        <!-- Mniejsze kafelki (max-w-[300px]) i większy odstęp między nimi (md:gap-16) -->
-        <div class="flex flex-col md:flex-row justify-center items-stretch gap-10 md:gap-25">
+        <!-- Szersze kafelki (max-w-[480px]), wyższe zdjęcie (h-56) i bardzo niski czarny pasek na dole -->
+        <div class="flex flex-col md:flex-row justify-center items-stretch gap-8 md:gap-12">
         
             <!-- KARTA 1: Szablon Fotograf -->
-            <a href="https://szablon-fotograf.vercel.app" target="_blank" class="group w-full max-w-[420px] mx-auto md:mx-0 flex flex-col border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-lg hover:-translate-y-1">
-                <div class="w-full h-32 bg-neutral-800 overflow-hidden relative">
-                    <!-- Automatyczny zrzut ekranu ze strony głównej fotografa -->
+            <a href="https://szablon-fotograf.vercel.app" target="_blank" class="group w-full max-w-[480px] mx-auto md:mx-0 flex flex-col border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-lg hover:-translate-y-1">
+                
+                <!-- WYŻSZE ZDJĘCIE (h-56) -->
+                <div class="w-full h-56 bg-neutral-800 overflow-hidden relative">
                     <img src="https://api.microlink.io/?url=https://szablon-fotograf.vercel.app&screenshot=true&meta=false&embed=screenshot.url" 
                          alt="Podgląd strony fotografa" 
                          class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-500"></div>
                 </div>
-                <div class="p-5 flex flex-col flex-grow justify-between">
-                    <div>
-                        <h3 class="text-lg font-medium mb-2 text-white">Szablon: Fotografia</h3>
-                        <p class="text-neutral-400 mb-3 text-xs leading-snug">
-                            Rozbudowana, wielozakładkowa strona WWW z dedykowanymi galeriami, eleganckim cennikiem pakietów i sekcją kontaktową. 
-                        </p>
+                
+                <!-- BARDZO NISKIE CZARNE POLE (py-3) -->
+                <div class="px-5 py-3 bg-neutral-900 flex flex-col justify-between">
+                    <div class="flex items-center justify-between mb-1">
+                        <h3 class="text-sm font-semibold text-white">Szablon: Fotografia</h3>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[10px] uppercase tracking-widest text-green-500">Status: Gotowy</span>
+                            <span class="text-[10px] uppercase tracking-widest text-white group-hover:underline">Otwórz ↗</span>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-between pt-2 border-t border-neutral-800/80">
-                        <span class="text-[11px] uppercase tracking-widest text-green-500">Status: Gotowy</span>
-                        <span class="text-[11px] uppercase tracking-widest text-white border-b border-transparent group-hover:border-white pb-0.5 transition duration-300">Otwórz stronę ↗</span>
-                    </div>
+                    <p class="text-neutral-400 text-[11px] leading-snug truncate">
+                        Rozbudowana, wielozakładkowa strona WWW z dedykowanymi galeriami, cennikiem i sekcją kontaktową.
+                    </p>
                 </div>
             </a>
             
             <!-- KARTA 2: Katalog Bilardowy -->
-            <a href="https://bilard.vercel.app" target="_blank" class="group w-full max-w-[420px] mx-auto md:mx-0 flex flex-col border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-lg hover:-translate-y-1">
-                <div class="w-full h-32 bg-neutral-800 overflow-hidden relative">
-                    <!-- Automatyczny zrzut ekranu ze strony głównej bilarda -->
+            <a href="https://bilard.vercel.app" target="_blank" class="group w-full max-w-[480px] mx-auto md:mx-0 flex flex-col border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-lg hover:-translate-y-1">
+                
+                <!-- WYŻSZE ZDJĘCIE (h-56) -->
+                <div class="w-full h-56 bg-neutral-800 overflow-hidden relative">
                     <img src="https://api.microlink.io/?url=https://bilard.vercel.app&screenshot=true&meta=false&embed=screenshot.url" 
                          alt="Podgląd katalogu bilardowego" 
                          class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-500"></div>
                 </div>
-                <div class="px-4 py-2.5 flex flex-col flex-grow justify-between">
-                    <div>
-                        <h3 class="text-lg font-medium mb-2 text-white">Katalog: Wyposażenie Rozrywkowe</h3>
-                        <p class="text-neutral-400 mb-5 text-xs leading-relaxed">
-                            Dynamiczny katalog produktów z podziałem na kategorie, interaktywnym filtrowaniem oraz szybką bazą danych w JavaScript.
-                        </p>
+                
+                <!-- BARDZO NISKIE CZARNE POLE (py-3) -->
+                <div class="px-5 py-3 bg-neutral-900 flex flex-col justify-between">
+                    <div class="flex items-center justify-between mb-1">
+                        <h3 class="text-sm font-semibold text-white">Katalog: Wyposażenie Rozrywkowe</h3>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[10px] uppercase tracking-widest text-green-500">Status: Gotowy</span>
+                            <span class="text-[10px] uppercase tracking-widest text-white group-hover:underline">Otwórz ↗</span>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-between pt-2 border-t border-neutral-800/80">
-                        <span class="text-[11px] uppercase tracking-widest text-green-500">Status: Gotowy</span>
-                        <span class="text-[11px] uppercase tracking-widest text-white border-b border-transparent group-hover:border-white pb-0.5 transition duration-300">Otwórz stronę ↗</span>
-                    </div>
+                    <p class="text-neutral-400 text-[11px] leading-snug truncate">
+                        Dynamiczny katalog produktów z podziałem na kategorie, filtrowaniem oraz szybką bazą danych w JS.
+                    </p>
                 </div>
             </a>
 
