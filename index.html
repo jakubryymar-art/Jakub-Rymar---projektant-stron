@@ -75,55 +75,59 @@
                 </div>
             </div>
         </div>
-    </header> <!-- TEN ZNACZNIK ZNIKNĄŁ WCZEŚNIEJ :) -->
+    </header>
 
-<div class="mb-16 md:text-left text-center">
-                <!-- Zmieniony tytuł na MOJE PROJEKTY -->
-                <h2 class="text-3xl font-bold mb-4 uppercase tracking-widest">Moje Projekty</h2>
-                <p class="text-gray-600 text-lg">Miejsca, w których rozwijam swoje umiejętności i testuję nowe technologie.</p>
-            </div>
+    <!-- Sekcja: Moje Projekty (Dodany kontener ograniczający szerokość i wyśrodkowanie) -->
+    <section id="moje-strony" class="py-20 max-w-4xl mx-auto px-6">
+        
+        <!-- Wyśrodkowany nagłówek -->
+        <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-4 uppercase tracking-widest">Moje Projekty</h2>
+            <p class="text-gray-600 text-lg">Miejsca, w których rozwijam swoje umiejętności i testuję nowe technologie.</p>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <!-- Zmniejszone kafelki (max-w-3xl mx-auto ogranicza ich wielkość) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        
+            <!-- KARTA 1: Szablon Fotograf -->
+            <a href="https://szablon-fotograf.vercel.app" target="_blank" class="group block border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-lg hover:-translate-y-1">
+                <div class="w-full h-48 bg-neutral-800 overflow-hidden relative">
+                    <img src="projekt-foto.jpg" alt="Podgląd strony fotografa" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition duration-500"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-light mb-2 text-white">Szablon: Fotografia</h3>
+                    <p class="text-neutral-400 mb-5 text-sm leading-relaxed">
+                        Rozbudowana, wielozakładkowa strona WWW z dedykowanymi galeriami, eleganckim cennikiem pakietów i sekcją kontaktową. 
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs uppercase tracking-widest text-green-500">Status: Gotowy</span>
+                        <span class="text-xs uppercase tracking-widest text-white border-b border-transparent group-hover:border-white pb-1 transition duration-300">Otwórz stronę ↗</span>
+                    </div>
+                </div>
+            </a>
             
-                <!-- KARTA 1: Szablon Fotograf -->
-                <a href="https://szablon-fotograf.vercel.app" target="_blank" class="group block border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-xl">
-                    <div class="w-full aspect-video bg-neutral-800 overflow-hidden relative">
-                        <!-- TUTAJ WPISZ NAZWĘ SWOJEGO SCREENA DLA FOTOGRAFA -->
-                        <img src="projekt-foto.jpg" alt="Podgląd strony fotografa" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition duration-500"></div>
+            <!-- KARTA 2: Katalog Bilardowy -->
+            <a href="https://bilard.vercel.app" target="_blank" class="group block border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-lg hover:-translate-y-1">
+                <div class="w-full h-48 bg-neutral-800 overflow-hidden relative">
+                    <img src="projekt-bilard.jpg" alt="Podgląd katalogu bilardowego" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition duration-500"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-light mb-2 text-white">Katalog: Wyposażenie Rozrywkowe</h3>
+                    <p class="text-neutral-400 mb-5 text-sm leading-relaxed">
+                        Dynamiczny katalog produktów z podziałem na kategorie, interaktywnym filtrowaniem oraz szybką bazą danych w JavaScript.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs uppercase tracking-widest text-green-500">Status: Gotowy</span>
+                        <span class="text-xs uppercase tracking-widest text-white border-b border-transparent group-hover:border-white pb-1 transition duration-300">Otwórz stronę ↗</span>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-light mb-4 text-white">Szablon: Fotografia</h3>
-                        <p class="text-neutral-400 mb-6 text-sm">
-                            Rozbudowana, wielozakładkowa strona WWW z dedykowanymi galeriami, eleganckim cennikiem pakietów i sekcją kontaktową. 
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs uppercase tracking-widest text-green-500">Status: Gotowy</span>
-                            <span class="text-xs uppercase tracking-widest text-white border-b border-transparent group-hover:border-white pb-1 transition duration-300">Otwórz stronę ↗</span>
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- KARTA 2: Katalog Bilardowy -->
-                <a href="https://bilard.vercel.app" target="_blank" class="group block border border-neutral-800 rounded-2xl overflow-hidden hover:border-neutral-500 transition duration-500 bg-neutral-900 shadow-xl">
-                    <div class="w-full aspect-video bg-neutral-800 overflow-hidden relative">
-                        <!-- TUTAJ WPISZ NAZWĘ SWOJEGO SCREENA DLA BILARDA -->
-                        <img src="projekt-bilard.jpg" alt="Podgląd katalogu bilardowego" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition duration-500"></div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-light mb-4 text-white">Katalog: Wyposażenie Rozrywkowe</h3>
-                        <p class="text-neutral-400 mb-6 text-sm">
-                            Dynamiczny katalog produktów z podziałem na kategorie, interaktywnym filtrowaniem oraz szybką bazą danych w JavaScript.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs uppercase tracking-widest text-green-500">Status: Gotowy</span>
-                            <span class="text-xs uppercase tracking-widest text-white border-b border-transparent group-hover:border-white pb-1 transition duration-300">Otwórz stronę ↗</span>
-                        </div>
-                    </div>
-                </a>
+                </div>
+            </a>
 
-            </div>
+        </div>
+    </section>
+
     <!-- Stopka / Kontakt -->
     <section id="kontakt" class="py-24 bg-black text-white text-center">
         <div class="max-w-3xl mx-auto px-6">
